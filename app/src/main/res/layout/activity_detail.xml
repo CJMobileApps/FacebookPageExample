@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/lightGrey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cjfreelancing.facebookexample.DetailActivity">
+
+    <include
+        android:id="@+id/app_toolbar_detail"
+        layout="@layout/action_bar_detail"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/image_view_detail"
+            android:paddingRight="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollHorizontally="false"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:id="@+id/profile_name_text_view_detail"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollHorizontally="false"
+                android:textSize="12sp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/lightGrey"
+                android:text="This is a date"
+                android:id="@+id/date_text_view_detail"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollHorizontally="false"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:text="holder"
+            android:id="@+id/comments_text_view_detail"
+            />
+
+        <ImageView
+            android:id="@+id/photo_image_view_detail"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:layout_height="250dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

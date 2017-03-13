@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:paddingRight="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollHorizontally="false"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:paddingBottom="3dp"
+                android:id="@+id/profile_name_text_view"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollHorizontally="false"
+                android:textSize="12sp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/lightGrey"
+                android:text="This is a date"
+                android:id="@+id/date_text_view"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollHorizontally="false"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:paddingBottom="10dp"
+                android:id="@+id/comments_text_view"
+                />
+
+            <ImageView
+                android:id="@+id/photo_image_view"
+                android:layout_width="match_parent"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:scaleType="fitXY"
+                android:layout_height="200dp" />
+
+            <LinearLayout
+                android:id="@+id/like_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/like_image_view"
+                    android:tint="@color/lightGrey"
+                    android:src="@drawable/likeicon">
+                </ImageView>
+
+                <TextView
+                    android:paddingTop="3dp"
+                    android:paddingLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/lightGrey"
+                    android:text="Like"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:padding="5dp"
+        android:visibility="gone"
+        style="@android:style/Widget.ProgressBar"
+
+        />
+
+
+</LinearLayout>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:paddingLeft="50dp"
+        android:text="Timeline"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:id="@+id/toolbar_title" />
+
+</android.support.v7.widget.Toolbar>
